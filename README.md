@@ -34,7 +34,7 @@ For this to work (prefered server) it is mandatory to set the variable ntp_serve
 Supported Systems
 ------------
 
-Tested on CentOS 7.0.1406 and CentOS 7.6.1810.
+Tested on CentOS 7.6.1810.
 
 Variables
 --------------
