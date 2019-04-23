@@ -1,0 +1,9 @@
+---
+- name: stop chronyd service and disable
+  include: chronyd_disable.yml
+
+- name: check if ntp is installed
+  include: ntp_install.yml
+  
+- name: copy ntp.conf
+  include: ntpconf_copy.yml

@@ -1,0 +1,6 @@
+---
+- name: restart ntpd service
+  service:
+    name: ntpd
+    enabled: yes
+    state: restarted

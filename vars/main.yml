@@ -1,0 +1,4 @@
+---
+ntp_conf_file_name: ntp.conf
+
+ntp_conf_file_path: /etc

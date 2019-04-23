@@ -1,0 +1,12 @@
+---
+
+#the drift file is used to store the frequency offset between the system clock running at its nominal frequency and the frequency required to remain in synchronization with UTC
+ntp_driftfile: /var/lib/ntp/drift
+
+#define ntp server that will be used 
+ntp_server_1: 0.europe.pool.ntp.org
+
+#define additional ntp server that will be used 
+ntp_server_2: 1.europe.pool.ntp.org
+
+#the prefered ntp server that will be used is defined in the inventory file and the variable ntp_server_prefered is used

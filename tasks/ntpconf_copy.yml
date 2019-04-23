@@ -1,0 +1,10 @@
+---
+- name: copy {{ntp_conf_file_name}} to {{ntp_conf_file_path}}/{{ntp_conf_file_name}}
+  template:
+    src: ntp.conf.j2
+    dest: "{{ntp_conf_file_path}}/{{ntp_conf_file_name}}"
+    owner: "root"
+    group: "root"
+    mode: 0644
+    backup: yes
+  notify: restart ntpd service

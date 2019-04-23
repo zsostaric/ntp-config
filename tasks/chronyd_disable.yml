@@ -1,0 +1,6 @@
+---
+- name: stop service cronyd and disable
+  systemd:
+    name: chronyd
+    state: stopped
+    enabled: no
