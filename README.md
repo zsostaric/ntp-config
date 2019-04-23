@@ -9,6 +9,7 @@ Description
 This role will first stop and disable cronyd (if present) and set 2 common NTP servers:
 
 0.europe.pool.ntp.org
+
 1.europe.pool.ntp.org
 
 It will also set a prefered NTP server on the first server:
@@ -25,7 +26,9 @@ Requirements
 For this to work (prefered server) it is mandatory to set the variable ntp_server_prefered in the inventory list per server. For example:
 
 [servers]
+
 192.168.6.10    ntp_server_prefered=hr.pool.ntp.org
+
 192.168.6.11    ntp_server_prefered=si.pool.ntp.org
 
 Supported Systems
